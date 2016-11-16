@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sopt.login.activity.StartActivity"
+    android:background="@drawable/gradation">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:text="어디에서 추억을"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginTop="6dp"
+                android:text="쌓고 싶으세요?"
+            android:textColor="#ffffff"
+                android:textStyle="bold"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp">
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="여행하다 모르는 것이 생길 때,"
+                android:textColor="#ffffff"
+            android:textSize="15sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="친구같은 가이드를 원할때,"
+                android:textColor="#ffffff"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:text="혼자 고민하지 말고"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="4dp"
+                android:text="당신의 언어를 할수 있는"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="가이드와 함께 하세요!"
+                android:textSize="15sp"/>
+            </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="가입하기"
+            android:layout_marginTop="80dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1A806A"
+            android:background="@drawable/rounded_corners"
+            android:id="@+id/btnLinkToRegisterScreen"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_stroke"
+            android:id="@+id/btnLinkToLoginScreen"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
