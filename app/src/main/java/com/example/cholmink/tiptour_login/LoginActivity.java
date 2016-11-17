@@ -108,8 +108,13 @@ public class LoginActivity extends AppCompatActivity {
                             app.user_id = tempContent.user_idx;
 
 
-                            Log.i("MyTag", "유저아이디 제데로 넘어왓나요: "+ app.user_id +"  ");
+                            Log.i("MyTag", "유저아이디 제데로 넘어왓나요: " + app.user_id + "  ");
+                            Intent i = new Intent(getApplicationContext(),
+                                    MainActivity.class);
+                            startActivity(i);
+                            finish();
                         } else {
+                            Toast.makeText(LoginActivity.this, "로그인 실패.. 아이디와 비밀번호를 다시 확인해 주세요", Toast.LENGTH_SHORT).show();
                             int statusCode = response.code();
                             Log.i("MyTag", "응답코드 : " + statusCode);
 
@@ -121,10 +126,6 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                 });
-                Intent i = new Intent(getApplicationContext(),
-                       MainActivity.class);
-                startActivity(i);
-                finish();
             }
 
         });
