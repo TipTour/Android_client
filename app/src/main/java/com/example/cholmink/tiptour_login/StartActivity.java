@@ -6,16 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.cholmink.tiptour_login.data.StaticData;
 import com.example.cholmink.tiptour_login.register.RegisterActivity;
 
 
 public class StartActivity extends Activity {
+
     private Button btnLinkToLogin;
     private Button btnLinkToRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
 
         btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);

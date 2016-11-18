@@ -1,23 +1,19 @@
 <resources>
     <string name="app_name">TipTour_login</string>
+    <string name="sample">sample</string>
 
     <string name="open_drawer">open drawer</string>
     <string name="close_drawer">close drawer</string>
 
+    <string name="startPoint">출발</string>
+    <string name="endPoint">도착</string>
+    
+    <string name="time">예상 소요시간</string>
+    <string name="length">총 거리</string>
+    <string name="cost">팁 비용</string>
 
-    <string-array name="menu_string">
-        <item>관광하기</item>
-        <item>관광지 선택</item>
-        <item>투어보관함</item>
-        <item>주변 가이드</item>
-        <item>관광 해주기</item>
-        <item>주변 관광객</item>
-        <item>관광코스</item>
-        <item>몰라</item>
-        <item>설정</item>
-        <item>프로필 설정</item>
-        <item>개발 정보</item>
-    </string-array>
+    <string name="save">저장하기</string>
+    <string name="connect">연결하기</string>
 
     <string name="group1">관광하기</string>
     <string name="g1_menu1">관광지 선택</string>

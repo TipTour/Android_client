@@ -3,6 +3,7 @@ package com.example.cholmink.tiptour_login;
 import android.app.Application;
 import android.util.Log;
 
+import com.example.cholmink.tiptour_login.data.StaticData;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -37,6 +38,9 @@ public class ApplicationController extends Application {
         return networkService;
     }
 
+    private StaticData mData = StaticData.getInstance();
+
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -47,6 +51,9 @@ public class ApplicationController extends Application {
         Log.i("MyTag", "가장 먼저 실행");
         ApplicationController.instance = this;
         this.buildService();
+
+        mData.setDisplayPixels(getApplicationContext());
+
     }
 
     private void buildService(){

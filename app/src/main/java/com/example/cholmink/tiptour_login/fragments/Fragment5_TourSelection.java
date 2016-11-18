@@ -21,6 +21,7 @@ public class Fragment5_TourSelection extends FChildActivity {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tourselection, container, false);
+
         TMapView tMapView = new TMapView(getActivity().getApplicationContext());
         tMapView.setSKPMapApiKey("52141bc0-08fa-3309-af84-0cfc120c0101");
         tMapView.setLanguage(TMapView.LANGUAGE_KOREAN);
