@@ -53,6 +53,7 @@ public class ApplicationController extends Application {
         this.buildService();
 
         mData.setDisplayPixels(getApplicationContext());
+        mData.setAndroidContext(this);
 
     }
 

@@ -17,6 +17,12 @@ public class StaticData {
 
     private int width, height;
 
+    private Context androidContext;
+
+    public void setAndroidContext(Context context) {
+        this.androidContext = context;
+    }
+
     public void setDisplayPixels(Context context){
         width = context.getResources().getDisplayMetrics().widthPixels;
         height = context.getResources().getDisplayMetrics().heightPixels;
@@ -29,6 +35,12 @@ public class StaticData {
     public int getHeight(){
         return height;
     }
+
+    public Context getAndroidContext(){
+        return androidContext;
+    }
+
+
 
 
 

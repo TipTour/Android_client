@@ -44,7 +44,7 @@ public class TourBoxAdapter extends BaseAdapter {
         return position;
     }
 
-    class ViewHolder{
+    private class ViewHolder{
         LinearLayout itembg;
         TextView numberText;
         TextView nameText;

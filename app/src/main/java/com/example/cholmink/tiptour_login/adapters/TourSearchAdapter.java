@@ -44,7 +44,8 @@ public class TourSearchAdapter extends BaseAdapter implements Filterable {
     public long getItemId(int position) {
         return position;
     }
-    class ViewHolder{
+
+    private class ViewHolder{
         TextView nameText;
         TextView detailText;
     }
