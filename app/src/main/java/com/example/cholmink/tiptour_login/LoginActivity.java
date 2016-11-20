@@ -3,8 +3,6 @@ package com.example.cholmink.tiptour_login;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -12,17 +10,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.cholmink.tiptour_login.activities.SActivity;
 import com.example.cholmink.tiptour_login.data.Content;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 /**
  * Created by sukyami on 16. 1. 12..
  */
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends SActivity {
 
 
     private EditText inputEmail;
@@ -51,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.login_join_member_btn);
         btnLinkfacebook = (Button) findViewById(R.id.fackbook_btn);
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+//        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
 
 
