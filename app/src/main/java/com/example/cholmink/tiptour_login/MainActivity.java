@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.cholmink.tiptour_login.activities.NavigationDrawerActivity;
+import com.example.cholmink.tiptour_login.data.StaticData;
 import com.example.cholmink.tiptour_login.fragments.Fragment1_Information;
 import com.example.cholmink.tiptour_login.fragments.Fragment2_GuideSettings;
 import com.example.cholmink.tiptour_login.fragments.Fragment3_ProfileSetting;
@@ -15,6 +16,7 @@ import com.example.cholmink.tiptour_login.fragments.Fragment4_TourBox;
 import com.example.cholmink.tiptour_login.fragments.Fragment5_TourSelection;
 
 public class MainActivity extends NavigationDrawerActivity {
+    private StaticData mData = StaticData.getInstance();
 
 
     @Override
@@ -22,6 +24,8 @@ public class MainActivity extends NavigationDrawerActivity {
         super.onCreate(savedInstanceState);
 
     }
+
+
 
     public void onMenuClickListener(View v){
         Fragment fragment = getFragment(v.getId());
