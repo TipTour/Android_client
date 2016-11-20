@@ -2,6 +2,8 @@ package com.example.cholmink.tiptour_login.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +27,7 @@ public class Fragment5_TourSelection extends FChildActivity {
         View v = inflater.inflate(R.layout.fragment_tourselection, container, false);
         TMapView tMapView = null;
         try {
-            tMapView = new TMapView(mData.get);
+            tMapView = new TMapView(getContext());
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
@@ -35,12 +37,36 @@ public class Fragment5_TourSelection extends FChildActivity {
             tMapView.setIconVisibility(true);
             tMapView.setZoomLevel(7);
             tMapView.setMapType(TMapView.MAPTYPE_STANDARD);
-            tMapView.setCompassMode(true);
+            tMapView.setCompassMode(false);
             tMapView.setTrackingMode(true);
             ((RelativeLayout) v.findViewById(R.id.relative_map)).addView(tMapView);
         }
 
         return v;
     }
+
+
+    /**
+     *
+     * 검색을 할때 리스트가 보이게 함
+     */
+    private TextWatcher searchEditTextWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
+
+
 
 }

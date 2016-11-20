@@ -24,6 +24,8 @@ public class MainActivity extends NavigationDrawerActivity {
 
     }
 
+
+
     public void onMenuClickListener(View v){
         Fragment fragment = getFragment(v.getId());
         String toolbarString = ((TextView) findViewById(v.getId())).getText().toString();

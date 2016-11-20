@@ -19,11 +19,9 @@
     <string name="g1_menu1">관광지 선택</string>
     <string name="g1_menu2">투어보관함</string>
     <string name="g1_menu3">주변 가이드</string>
-    <string name="group2">관광 해주기</string>
-    <string name="g2_menu1">주변 관광객</string>
-    <string name="g2_menu2">관광코스</string>
+    <string name="group2">설정</string>
+    <string name="g2_menu1">프로필 설정</string>
+    <string name="g2_menu2">개발 정보</string>
     <string name="g2_menu3">몰라</string>
-    <string name="group3">설정</string>
-    <string name="g3_menu1">프로필 설정</string>
-    <string name="g3_menu2">개발 정보</string>
+
 </resources>
